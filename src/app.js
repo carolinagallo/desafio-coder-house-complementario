@@ -42,8 +42,6 @@ socketServer.on("connection", (socket) => {
 });
 
 mongoose
-  .connect(
-    "mongodb+srv://user-owner:ccByyu8utvfFJJNK@codercluster.0ypijoz.mongodb.net/ecommerce?retryWrites=true&w=majority"
-  )
+  .connect("STRING DE CONEXION")
   .then(() => console.log("se conecto a la db"))
   .catch((error) => console.log(error));
